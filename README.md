@@ -43,6 +43,33 @@ Which is the last piece of the chain.
 It's the file where the python script (the exe file) writes the items that are parsed from us typing stuff in our chat.
 
 
+List of items that are available for spawning:
+
+    "!medkit": "medkit",
+    "!army": "medkit_army",
+    "!sci": "medkit_scientic",
+    "!bandage": "bandage",
+    "!antirad": "antirad",
+    # Food/Drink
+    "!bread": "bread",
+    "!vodka": "vodka",
+    "!energy": "energy_drink",
+    "!sausage": "kolbasa",
+    # Ammo - 5.45 (Warsaw)
+    "!545": "ammo_5.45x39_fmj",
+    "!545ap": "ammo_5.45x39_ap",
+    # Ammo - 5.56 (NATO)
+    "!556": "ammo_5.56x45_ss109",
+    "!556ap": "ammo_5.56x45_ap",
+    # Ammo - 7.62
+    "!762": "ammo_7.62x39_fmj",
+    "!762ap": "ammo_7.62x39_ap",
+    "!sniper": "ammo_7.62x54_7h1",
+    # Ammo - Shotgun
+    "!buck": "ammo_12x70_buck",
+    "!slug": "ammo_12x76_zhekan",
+    
+
 Again. It's a bespoke small program made specifically for NS to tackle its jankiness and it hasn't been tested properly and thoroughly.
 
 It's working and I decided to post it here so it doens't get lost.
