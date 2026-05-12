@@ -6,7 +6,7 @@ from threading import Thread
 
 # --- CONFIGURATION (VERIFIED) ---
 TWITCH_CHANNEL = "[...your lowercase name...]"
-OAUTH_TOKEN = ""
+OAUTH_TOKEN = "[... your OAuth ...]"
 STALKER_PATH = r"[...full gamepath...]\gamedata\config\twitch_spawn.ltx"
 
 # --- FULL ITEM DICTIONARY ---
