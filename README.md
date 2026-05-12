@@ -20,9 +20,9 @@ put twitch_integration.check_twitch_commands() - this calls for the twitch integ
 
 Or get it from this repo if you happen to be using the same NS version as I am (NS 2016 + 2023 Update).
 
-And if you are not running any mods, unpack game's file and get it.
+And if you are not running any mods, unpack game's files and get it.
 
-It's highly important because incompatible files are guaranteed to crash your game. 
+It's highly important because files from different mods and versions are guaranteed to crash your game if they are incompatible. 
 
 
 I'm using Windows 10.
