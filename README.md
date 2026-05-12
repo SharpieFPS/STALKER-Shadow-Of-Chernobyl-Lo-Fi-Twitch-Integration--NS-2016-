@@ -43,7 +43,7 @@ Which is the last piece of the chain.
 It's the file where the python script (the exe file) writes the items that are parsed from us typing stuff in our chat.
 
 
-List of items that are available for spawning:
+List of items that are available for spawning (Type them in Twitch chat after you've launched the program):
 
     "!medkit": "medkit",
     "!army": "medkit_army",
