@@ -3,9 +3,13 @@ A program that builds a bridge between Twitch and game's bind_stalker.script fil
 
 To build it inside a folder that you are in, make sure python is installed on your computer and run:
 
+(Before you run it you need to make some changes to the file, namely get your OAuth AntiScuff.com by logging into it through your Twitch account, paste it inside the python file as well as your lowercase name where needed)
+
 1)pip install pyinstaller
 
 2)pyinstaller --onefile --noconsole stalker_bridge.py
+
+
 
 <img width="592" height="424" alt="image" src="https://github.com/user-attachments/assets/fd252816-ff62-4260-a935-8036bb240708" />
 
