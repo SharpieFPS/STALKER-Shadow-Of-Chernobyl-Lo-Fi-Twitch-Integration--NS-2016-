@@ -16,7 +16,7 @@ Make sure stuff in fsgame.ltx that relates to $game_data$ = true|	true| is set t
 Get a unpacker and unpack your mod's files to get stalker_bridge.py and, inside of it, under object_binder.update(self, delta)
 put twitch_integration.check_twitch_commands() - this calls for the twitch integration script when the game is running.
 
-Or get it from this repo if you happen to be using the same NS version as I am.
+Or get it from this repo if you happen to be using the same NS version as I am (NS 2016 + 2023 Update).
 
 And if you are not running any mods, unpack game's file and get it.
 
