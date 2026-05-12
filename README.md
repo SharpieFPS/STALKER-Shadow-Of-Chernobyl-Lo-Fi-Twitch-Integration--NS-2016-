@@ -28,25 +28,6 @@ And if you are not running any mods, unpack game's files and get it.
 
 It's highly important because files from different mods and versions are guaranteed to crash your game if they are incompatible. 
 
-
-I'm using Windows 10.
-
-To run the program you need two script files.
-
-One is bind_stalker.script.
-
-And since I've created this program (with the use of AI of course, I'm not a programmer)
-to work with the Narodnaya Solyanka mod and on non-enhanced STALKER (Steam version),
-I had to extract bind_stalker.script from NS's files by using a unpacker (don't bother rar'ing or zip'ing it won't work)
-and insert a line of code there that references the main script that works as a local Twitch agent so to say.
-
-The AI called it twitch_integration.script and it's a script that check every two seconds for the content of another custom file, twitch_spawn.ltx.
-
-Which is the last piece of the chain.
-
-It's the file where the python script (the exe file) writes the items that are parsed from us typing stuff in our chat.
-
-
 List of items that are available for spawning (Type them in Twitch chat after you've launched the program):
 
     "!medkit": "medkit",
@@ -72,7 +53,24 @@ List of items that are available for spawning (Type them in Twitch chat after yo
     # Ammo - Shotgun
     "!buck": "ammo_12x70_buck",
     "!slug": "ammo_12x76_zhekan",
-    
+
+I'm using Windows 10.
+
+The way it works, there are two script files.
+
+One is bind_stalker.script.
+
+And since I've created this program (with the use of AI of course, I'm not a programmer)
+to work with the Narodnaya Solyanka mod and on non-enhanced STALKER (Steam version),
+I had to extract bind_stalker.script from NS's files by using a unpacker (don't bother rar'ing or zip'ing it won't work)
+and insert a line of code there that references the main script that works as a local Twitch agent so to say.
+
+The AI called it twitch_integration.script and it's a script that check every two seconds for the content of another custom file, twitch_spawn.ltx.
+
+Which is the last piece of the chain.
+
+It's the file where the python script (the exe file) writes the items that are parsed from us typing stuff in our chat.
+
 
 Again. It's a bespoke small program made specifically for NS to tackle its jankiness and it hasn't been tested properly and thoroughly.
 
