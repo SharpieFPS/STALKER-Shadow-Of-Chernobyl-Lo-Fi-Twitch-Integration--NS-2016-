@@ -1,0 +1,39 @@
+local last_id = 0
+local last_check = 0
+
+function check_twitch_commands()
+    local current_time = time_global()
+    
+    -- 1. PERSISTENT TIMER (Prevents the 'nil' math crash)
+    if current_time < last_check + 2000 then return end
+    last_check = current_time
+
+    -- 2. THE ENGINE-LEVEL READ
+    -- Looks for gamedata\config\twitch_spawn.ltx
+    local ini = ini_file("twitch_spawn.ltx")
+    
+    if ini and ini:section_exist("twitch") then
+        -- 3. THE ID CHECK
+        -- Prevents duplicate spawns without needing to 'erase' the file
+        local current_id = ini:r_u32("twitch", "id")
+        
+        if current_id ~= last_id then
+            local item_name = ini:r_string("twitch", "item")
+            
+            -- 4. VALIDATION & SPAWN
+            if system_ini():section_exist(item_name) then
+                alife():create(item_name, 
+                             db.actor:position(), 
+                             db.actor:level_vertex_id(), 
+                             db.actor:game_vertex_id(), 
+                             db.actor:id())
+                
+                -- Notification
+                news_manager.send_tip(db.actor, "TWITCH: " .. item_name, nil, nil, 5000)
+            end
+            
+            -- Update ID to match the file
+            last_id = current_id
+        end
+    end
+end
