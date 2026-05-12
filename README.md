@@ -7,6 +7,8 @@ To build it inside a folder that you are in, make sure python is installed on yo
 
 2)pyinstaller --onefile --noconsole stalker_bridge.py
 
+<img width="592" height="424" alt="image" src="https://github.com/user-attachments/assets/fd252816-ff62-4260-a935-8036bb240708" />
+
 -----------INSTALLATION OF SCRIPTS------------
 
 Put twitch_integration.script and bind_stalker.script in [game directory]\gamedata\scripts.
