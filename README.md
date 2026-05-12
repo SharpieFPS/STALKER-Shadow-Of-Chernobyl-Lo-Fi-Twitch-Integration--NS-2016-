@@ -1,7 +1,7 @@
 # STALKER-Shadow-Of-Chernobyl-Lo-Fi-Twitch-Integration
 A program that builds a bridge between Twitch and game's bind_stalker.script file to spawn medkits, food, ammo.
 
-To build it inside a folder that you are in, install python on your computer and run:
+To build it inside a folder that you are in, make sure python is installed on your computer and run:
 
 1)pip install pyinstaller
 
